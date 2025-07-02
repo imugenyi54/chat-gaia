@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Social Platform</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; }
+    #posts { border-top: 1px solid #ccc; margin-top: 1em; }
+    .post { border-bottom: 1px solid #ccc; padding: 0.5em 0; }
+  </style>
+</head>
+<body>
+<h1>Social Platform</h1>
+<div id="auth">
+  <input id="username" placeholder="username">
+  <input id="password" placeholder="password" type="password">
+  <button onclick="signup()">Sign Up</button>
+  <button onclick="login()">Log In</button>
+</div>
+<div id="create" style="display:none;">
+  <textarea id="content" placeholder="What's on your mind?"></textarea>
+  <button onclick="createPost()">Post</button>
+</div>
+<div id="posts"></div>
+<script src="script.js"></script>
+</body>
+</html>
